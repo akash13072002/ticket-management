@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.toolbox-container{
+    height: 5rem;
+    background-color: grey;
+   display: flex;
+   align-items:center;
+   
+}
+
+.toolbox-container>*{  /*  toolbox container ke sb children ke liye   */
+    margin:4rem;
+}
+
+.toolbox-priority-container{
+    height:3.3rem;
+    width:15rem;
+    background-color:yellow;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.action-button-container{
+    height:3.5rem;
+    width: 8rem;
+    background-color: azure;
+    display: flex;
+}
+
+.action-button-container>*{
+display: flex;
+justify-content: center;
+width: 50%;
+font-size: 2rem;
+align-items:center;
+}
+
+.color{
+    height:1.5rem;
+    width: 3rem;
+}
+
+.lightpink{
+background-color: lightpink;
+}
+.lightgreen{
+background-color: lightgreen;
+}
+.lightblue{
+background-color:rgb(35, 122, 237) ;
+}
+.black{
+background-color: black;
+}
+
+.model-container{
+height: 50vh;
+width: 45vw;
+background-color: aqua;
+position: absolute;          /*   isse hum div ki position change kr skte h top bottom left right  */
+top: 25%;
+left:25%;
+/* display: flex; */
+display: none;
+}
+
+.text-area-container{
+    height: 100%;
+    width: 75%;
+    background-color: #dfe4ea;
+    outline: none;
+    border: none;
+    resize : none;
+    font-size: 2rem;
+   /* padding: 2rem; */
+  
+}
+
+.priority-colors-containers{
+    height: 100%;
+    width: 25%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: lightgray
+}
+.priority-colors{
+    height:3rem;
+    width:5rem;
+}
+
+.main-container{
+    display: flex;
+    gap: 2rem;
+   justify-content: center;
+   padding: 3rem;
+   flex-wrap: wrap;  /*  jo div m wo aache se arrange honge.  */
+}
+.ticket-container{
+    height: 12rem;
+    width: 15rem;
+    background-color: coral;
+}
+
+.ticket-color{
+    height: 1rem;
+}
+
+.ticket-id{
+    background-color: yellow;
+    height: 2rem;
+}
+.ticket-lock{
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: flex-end;
+    margin-top: 94px;
+    margin-right: 5.1px;
+}
+
+.add-button:hover{    /*  hover krne se jb us element pe jate h to uska color change hota h 
+                         hover is a in-built class in CSS  */
+    background-color: rgb(13, 206, 13);
+    color:white
+}
+.remove-buttton:hover{
+    background-color: goldenrod;
+    color:white
+}
+
+.toolbox-priority-container>*:hover{
+    background-color: #485460;
+
+}
+
+.active{
+    border: 5px solid coral;
+  }
